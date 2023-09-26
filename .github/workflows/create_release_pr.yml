@@ -18,9 +18,9 @@ jobs:
             # Create a pull request (if one doesn't already exist)
             - name: Create Pull Request
               run: |
-                pr_list=$(gh pr list --head "$GITHUB_HEAD_REF" --json number --jq '.[] | .number')
+                pr_list=$(gh pr list --head $GITHUB_REF_NAME --json number --jq '.[] | .number')
                 if [ -n "$pr_list" ]; then    
-                  echo "Pull request for branch $GITHUB_HEAD_REF already exists."    
+                  echo "Pull request for branch $GITHUB_REF_NAME already exists."    
                 else    
                   gh pr create --fill --draft --base live    
                 fi
