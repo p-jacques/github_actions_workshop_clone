@@ -8,7 +8,7 @@ on:
 
 jobs:
     test:
-        runs-on: ubuntu_latest
+        runs-on: ubuntu-latest
         steps:
             # Checkout the repository
             - uses: actions/checkout@v3
