@@ -8,13 +8,13 @@ on:
 
 jobs:
     test:
-        runs-on: ubuntu_latest
+        runs-on: ubuntu-latest
         steps:
             # Checkout the repository
             - uses: actions/checkout@v3
             # Set up Python
             - name: Set up Python
-              uses: action/setup-python@v3
+              uses: actions/setup-python@v3
               with:
                 python-version: "3.x"
             # Install requirements
