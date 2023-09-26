@@ -14,7 +14,7 @@ import main
         (1, 1, 2),
         (1, -1, 0),
         (0.1, 0.1, 0.2),
-    ]
+    ],
 )
 def test_example_add(num_1, num_2, expected):
     """
@@ -22,7 +22,7 @@ def test_example_add(num_1, num_2, expected):
     """
     actual = main.example_add(num_1, num_2)
 
-    assert actual==expected
+    assert actual == expected
 
 
 # @pytest.mark.parametrize(

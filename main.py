@@ -21,6 +21,7 @@ def example_add(num_1: int | float, num_2: int | float) -> int | float:
     """
     return num_1 + num_2
 
+
 # TODO - Implement function and tests
 # def example_bad_add(num_1: int | float, num_2: int | float) -> int | float:
 #     """
